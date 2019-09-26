@@ -160,5 +160,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        button_equal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                output.setText(new Tools().evaluation(input.getText().toString()));
+            }
+        });
+
     }
 }
