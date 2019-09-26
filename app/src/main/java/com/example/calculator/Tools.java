@@ -53,4 +53,8 @@ public class Tools {
         }
         return Long.toString(ans);
     }
+
+    public int add_tes(int a ,int b){
+        return a+b;
+    }
 }
