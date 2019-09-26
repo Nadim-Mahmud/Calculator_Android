@@ -135,28 +135,48 @@ public class MainActivity extends AppCompatActivity {
         button_add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                input.setText(input.getText()+"+");
+                if(output.getText().toString()=="0"){
+                    input.setText(input.getText()+"+");
+                }
+                else{
+                    input.setText(output.getText()+"+");
+                }
             }
         });
 
         button_minus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                input.setText(input.getText()+"-");
+                if(output.getText().toString().charAt(0)=='0'){
+                    input.setText(input.getText()+"-");
+                }
+                else{
+                    input.setText(output.getText()+"-");
+                }
             }
         });
 
         button_multiply.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                input.setText(input.getText()+"*");
+                if(output.getText().toString()=="0"){
+                    input.setText(input.getText()+"*");
+                }
+                else{
+                    input.setText(output.getText()+"*");
+                }
             }
         });
 
         button_divide.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                input.setText(input.getText()+"/");
+                if(output.getText().toString()=="0"){
+                    input.setText(input.getText()+"/");
+                }
+                else{
+                    input.setText(output.getText()+"/");
+                }
             }
         });
 
