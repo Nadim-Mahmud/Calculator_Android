@@ -135,7 +135,7 @@ public class MainActivity extends AppCompatActivity {
         button_add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(output.getText().toString()=="0"){
+                if(output.getText().toString().charAt(0)=='0'){
                     input.setText(input.getText()+"+");
                 }
                 else{
@@ -159,7 +159,7 @@ public class MainActivity extends AppCompatActivity {
         button_multiply.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(output.getText().toString()=="0"){
+                if(output.getText().toString().charAt(0)=='0'){
                     input.setText(input.getText()+"*");
                 }
                 else{
@@ -171,7 +171,7 @@ public class MainActivity extends AppCompatActivity {
         button_divide.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(output.getText().toString()=="0"){
+                if(output.getText().toString().charAt(0)=='0'){
                     input.setText(input.getText()+"/");
                 }
                 else{
