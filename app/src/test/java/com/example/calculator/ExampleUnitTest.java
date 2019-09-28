@@ -17,15 +17,16 @@ public class ExampleUnitTest {
     @Test
     public void expressinfIscorrect(){
         Tools tools = new Tools();
-        assertEquals("Right!!!!",36,tools.add_tes(12,24));
-        assertEquals("Right!!!!","13","13");
+        assertEquals("Right!!!!","144",tools.evaluation("12*12"));
+        assertEquals("Right!!!!","150",tools.evaluation("12*12+6"));
+        assertEquals("Right!!!!","146",tools.evaluation("12*12+6-4"));
     }
 
     @Test
     public void expressinfIscorrect2(){
         Tools tools = new Tools();
-        assertEquals("Right!!!!","24","24");
-        assertEquals("Right!!!!","12","12");
-        assertEquals("Right!!!!","13","13");
+        assertEquals("Right!!!!","140",tools.evaluation("12*12"));
+        assertEquals("Right!!!!","155",tools.evaluation("12*12+6"));
+        assertEquals("Right!!!!","145",tools.evaluation("12*12+6-4"));
     }
 }
