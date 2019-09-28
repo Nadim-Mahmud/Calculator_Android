@@ -17,7 +17,6 @@ public class ExampleUnitTest {
     @Test
     public void expressinfIscorrect(){
         Tools tools = new Tools();
-       // assertEquals("Right!!!!","24",tools.evaluation("30-6"));
         assertEquals("Right!!!!",36,tools.add_tes(12,24));
         assertEquals("Right!!!!","13","13");
     }

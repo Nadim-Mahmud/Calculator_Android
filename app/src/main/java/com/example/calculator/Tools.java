@@ -29,8 +29,6 @@ public class Tools {
 
         for(int i = 0; i<expression.length();i++){
             ch = expression.charAt(i);
-            Log.i("VUl", Long.toString(tmp2));
-            Log.i("VUl", ""+ch);
             if(ch<'0'||ch>'9') {
                 if(tmp1 == 0) {
                     tmp1 = tmp2;
