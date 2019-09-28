@@ -196,5 +196,21 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
+
+        if(savedInstanceState!=null){
+            String str,str2 ;
+            str = savedInstanceState.getString("EXPRESSION");
+            str2 = savedInstanceState.getString("EXPRESSION2");
+            input.setText(str);
+            output.setText(str2);
+        }
+
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putString("EXPRESSION",input.getText().toString());
+        outState.putString("EXPRESSION2",output.getText().toString());
     }
 }
