@@ -57,8 +57,9 @@ public class MainActivity extends AppCompatActivity {
         buttonAC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                input.setText("");
-                output.setText("0");
+                String str = input.getText().toString(),res;
+                res = str.substring(0, str.length() - 1);
+                input.setText(res);
             }
         });
 
@@ -187,5 +188,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        buttonAC.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                input.setText("");
+                output.setText("0");
+                return true;
+            }
+        });
     }
 }
