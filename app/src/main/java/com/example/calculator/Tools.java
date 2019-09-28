@@ -53,6 +53,7 @@ public class Tools {
     }
 
     public int add_tes(int a ,int b){
+        // String result = String.format("%.2f",res);
         return a+b;
     }
 }
